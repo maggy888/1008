@@ -1,3 +1,235 @@
-.index-title {
-  font-size: 100px;
+.breadcrumb {
+  background-color:#f9f6F5;
+  // color:rgba(249, 249, 249, 0.7); /* 半透明背景色 */
+  border-radius: 0.25rem; /* 圓角 */
+  max-width: 1920px; /* 設計稿最大寬度 */
+  height:48px;
+  width: 100%; /* 預設寬度 */
+  backdrop-filter: blur(20px); /* 模糊效果 */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* 陰影效果 */
 }
+.breadcrumb-item + .breadcrumb-item::before {
+  content: ">";
+  color: #bfbfbf; /* 斷點符號顏色 */
+  padding: 0 5px;
+}
+.breadcrumb a {
+  text-decoration: none; /* 移除超連結的下劃線 */
+}
+.breadcrumb-item.active {
+  color: #495057; /* 當前頁面顏色 */
+}
+/* 針對較小螢幕的樣式調整 */
+@media (max-width: 576px) {
+  .breadcrumb {
+      max-width: 100%; /* 小螢幕上佔滿寬度 */
+      font-size: 0.875rem; /* 調整字體大小 */
+      padding: 8px 10px; /* 調整內邊距 */
+  }
+  .breadcrumb-item + .breadcrumb-item::before {
+      padding: 0 5px; /* 調整小螢幕上的分隔符間距 */
+  }
+}
+
+html,
+body {
+position: relative;
+height: 100%;
+}
+
+body {
+background: #eee;
+margin: 0;
+padding: 0;
+}
+
+/* Swiper 容器 */
+.swiper {
+width: 100%;
+height: 100%;
+}
+
+/* Swiper 每個 slide */
+.swiper-slide {
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.swiper-slide img {
+display: block;
+width: 100%;
+height: 100%;
+object-fit: cover;
+border-radius: 8px; /* 圓角設置 */
+}
+
+/* 主圖片區域 */
+.mySwiper2 {
+height: 495px; /* 主圖片高度 */
+width: 664px; /* 主圖片寬度 */
+margin: 0 auto; /* 置中顯示 */
+grid-column: span 6; /* 主圖片佔6格 */
+}
+
+.mySwiper2 .swiper-slide img {
+width: 100%;
+height: 100%;
+object-fit: cover; /* 確保圖片適應容器 */
+border-radius: 8px; /* 圓角設置 */
+}
+
+/* 縮略圖區域 */
+.mySwiper {
+height: 144px; /* 縮略圖高度 */
+box-sizing: border-box;
+padding: 10px 0;
+display: flex;
+justify-content: center; /* 縮略圖居中顯示 */
+grid-column: span 6; /* 縮略圖佔6格 */
+}
+
+.mySwiper .swiper-wrapper {
+display: flex;
+align-items: center;
+}
+
+.mySwiper .swiper-slide {
+height: 100%; /* 縮略圖的高度 */
+opacity: 0.6; /* 未選中縮略圖的透明度 */
+cursor: pointer;
+transition: opacity 0.3s ease; /* 動態效果 */
+}
+
+/* 第一、二、三張縮略圖 */
+.mySwiper .swiper-slide:nth-child(1),
+.mySwiper .swiper-slide:nth-child(2),
+.mySwiper .swiper-slide:nth-child(3) {
+width: 144px; /* 縮略圖寬度 */
+}
+
+/* 第四張縮略圖，包含中度陰影 */
+.mySwiper .swiper-slide:nth-child(4) {
+width: 136px; /* 縮略圖寬度 */
+position: relative; /* 為了顯示陰影，設置相對定位 */
+}
+
+.mySwiper .swiper-slide:nth-child(4)::after {
+content: ""; /* 虛擬元素，用於陰影效果 */
+position: absolute;
+top: 0;
+right: -40px; /* 陰影相對於右側偏移 */
+width: 40px; /* 陰影寬度 */
+height: 100%;
+background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)); /* 漸變陰影效果 */
+box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* 中度陰影 */
+}
+
+/* 縮略圖選中狀態 */
+.mySwiper .swiper-slide-thumb-active {
+opacity: 1; /* 選中縮略圖不透明 */
+border: 2px solid #000; /* 選中縮略圖的邊框 */
+}
+
+.mySwiper .swiper-slide img {
+display: block;
+width: 100%;
+height: 100%;
+object-fit: cover; /* 確保縮略圖適應容器 */
+border-radius: 8px; /* 圓角設置 */
+}
+
+/* 整個容器的網格佈局 */
+.container {
+display: grid;
+grid-template-columns: repeat(12, 1fr); /* 12 格網格系統 */
+gap: 20px; /* 每格之間的間距 */
+max-width: 1200px; /* 最大寬度限制 */
+margin: 0 auto; /* 水平置中 */
+padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
