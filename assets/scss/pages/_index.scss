@@ -141,19 +141,26 @@ border-radius: 8px; /* 圓角設置 */
 }
 
 /* 整個容器的網格佈局 */
-.container {
-display: grid;
-grid-template-columns: repeat(12, 1fr); /* 12 格網格系統 */
-gap: 20px; /* 每格之間的間距 */
-max-width: 1200px; /* 最大寬度限制 */
-margin: 0 auto; /* 水平置中 */
-padding: 20px;
+ /* 調整圖片的大小及對齊方式 */
+ .product-image {
+  max-width: 100%; /* 圖片寬度最大為列的寬度 */
+  height: auto; /* 高度自動調整以保持比例 */
+  margin-bottom: 20px; /* 下邊距 */
+  border-radius: 8px; /* 圖片圓角 */
+}
+.product-description {
+  padding: 20px; /* 內邊距 */
+}
+/* 調整 swiper-slide 間距 */
+.swiper-slide {
+  margin-bottom: 32px; /* 為每個 swiper-slide 添加 32px 的下邊距 */
 }
 
-
-
-
-
+/* 調整 section-pic 的內邊距 */
+.section-pic {
+  padding-top: 32px; /* 上方內邊距 32px */
+  padding-bottom: 32px; /* 下方內邊距 32px */
+}
 
 
 

@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>月幕 MOON LIKE | online shop</title>
    <!-- Link Swiper's CSS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>  
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
   <%- include('./layout/head'); -%>
 </head>
@@ -20,15 +19,15 @@
 
     <main>
       <section class="section-article">   
-        <div class="container-fluid my-4">
+        <div class="container-fluid">
           <div class="row justify-content-center align-items-center">
             <div class="col-md-12 mb-3 me-4">
               <!-- breadcrumb 修改間距,背景顏色-->
               <nav style="--bs-breadcrumb-divider: url(data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E);" aria-label="breadcrumb">
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item gray-500"><a class="gray-500" href="#">首頁</a></li>
-                  <li class="breadcrumb-item gray-500"><a  class="gray-500" href="#">精選商品</a></li>
-                  <li class="breadcrumb-item active"><a  class="gray-700" href="#">財富綠水晶</a></li>
+                  <li class="breadcrumb-item gray-500"><a class="gray-500" href="#">精選商品</a></li>
+                  <li class="breadcrumb-item active"><a class="gray-700" href="#">財富綠水晶</a></li>
                 </ol>
               </nav>
             </div>
@@ -36,67 +35,95 @@
         </div>
       </section>  
 
-<!-- Swiper -->
+<section class="section-pic">
+  <div class="container-fluid1 pt-20 mt-5">
+    <div class="row col-lg-12 justify-content-center align-items-center">
+      <div class="col-sm-12 col-md-6">
+    
+<!-- Swiper  陰影部分RWD還沒設定-->
+        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper4">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="../assets/images/Item-4-2.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="../assets/images/Item-4-3.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="../assets/images/Item-4-4.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="../assets/images/Item-4.png" />
+            </div>   
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+        <div thumbsSlider="" class="swiper mySwiper3">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="../assets/images/Item-4-2.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="../assets/images/Item-4-3.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="../assets/images/Item-4-4.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="../assets/images/Item-4.png" />
+            </div>
+          </div>
+        </div> 
+        <div class="product-description">
+          <div class="col-sm-12 col-md-6 ">
+            <h1>財富綠水晶</h1>
+                <p>由天然綠色水晶製成，擁有迷人的色彩和光澤，能夠平衡身心靈的能量，帶來和諧與平穩。</p>
 
-<div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
-  <div class="swiper-wrapper" col-md-6>
-    <div class="swiper-slide">
-      <img src="../assets/images/Item-4-2.png" />
-    </div>
-    <div class="swiper-slide">
-      <img src="../assets/images/Item-4-3.png" />
-    </div>
-    <div class="swiper-slide">
-      <img src="../assets/images/Item-4-4.png" />
-    </div>
-    <div class="swiper-slide">
-      <img src="../assets/images/Item-4.png" />
-    </div>   
-  </div>
-  <div class="swiper-button-next"></div>
-  <div class="swiper-button-prev"></div>
-</div>
-<div thumbsSlider="" class="swiper mySwiper">
-  <div class="swiper-wrapper" col-md-6>
-    <div class="swiper-slide">
-      <img src="../assets/images/Item-4-2.png" />
-    </div>
-    <div class="swiper-slide">
-      <img src="../assets/images/Item-4-3.png" />
-    </div>
-    <div class="swiper-slide">
-      <img src="../assets/images/Item-4-4.png" />
-    </div>
-    <div class="swiper-slide">
-      <img src="../assets/images/Item-4.png" />
-    </div>
-  </div>
-</div> 
+            <h5>【材質】</h5>
+                <p>綠海文石+綠髮晶+綠幽靈+鈦晶石+14k金隔珠+14k刻花彎管+日本禪絲線</p>
 
+            <h5>綠海文石+綠髮晶+綠幽靈+鈦晶石+14k金隔珠+14k刻花彎管+日本禪絲線</h5>
+                <p>1. 水晶為天然材質,天然水晶材質有光澤、紋路、顏色、棉絮、礦缺、冰裂、雜質、黑礦雜點等差異,這些狀況不適用瑕疵商品退貨範圍。</p>
+                <p>2. 水晶礦石在不同的切面、角度或光線下,會呈現稍微不同的色澤。</p>  
+
+            <h2>NT990 <span>NT1990</span></h2>  
+                
+
+
+          </div>
+        </div>
+
+        
+      </div> 
+    </div>
+  </div>
+</section>
 <!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 <!-- Initialize Swiper -->
 <script>
-  var swiper = new Swiper(".mySwiper", {
+  var swiper1 = new Swiper(".mySwiper3", {
     spaceBetween: 10,
     slidesPerView: 4,
     freeMode: true,
     watchSlidesProgress: true,
   });
-  var swiper2 = new Swiper(".mySwiper2", {
+  var swiper2 = new Swiper(".mySwiper4", {
     spaceBetween: 10,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
     thumbs: {
-      swiper: swiper,
+      swiper: swiper1,
     },
   });
 </script>       
 
 
+</div>
 
 
 
