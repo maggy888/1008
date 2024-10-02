@@ -3,8 +3,7 @@
   // color:rgba(249, 249, 249, 0.7); /* 半透明背景色 */
   border-radius: 0.25rem; /* 圓角 */
   max-width: 1920px; /* 設計稿最大寬度 */
-  height:48px;
-  width: 100%; /* 預設寬度 */
+  height:0 auto;
   backdrop-filter: blur(20px); /* 模糊效果 */
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* 陰影效果 */
 }
@@ -13,18 +12,15 @@
   color: #bfbfbf; /* 斷點符號顏色 */
   padding: 0 5px;
 }
-.breadcrumb a {
-  text-decoration: none; /* 移除超連結的下劃線 */
-}
-.breadcrumb-item.active {
-  color: #495057; /* 當前頁面顏色 */
-}
+// .breadcrumb a {
+//   text-decoration: none; /* 移除超連結的下劃線 */
+// }
+
 /* 針對較小螢幕的樣式調整 */
 @media (max-width: 576px) {
   .breadcrumb {
       max-width: 100%; /* 小螢幕上佔滿寬度 */
       font-size: 0.875rem; /* 調整字體大小 */
-      padding: 8px 10px; /* 調整內邊距 */
   }
   .breadcrumb-item + .breadcrumb-item::before {
       padding: 0 5px; /* 調整小螢幕上的分隔符間距 */
@@ -67,8 +63,8 @@ border-radius: 8px; /* 圓角設置 */
 
 /* 主圖片區域 */
 .mySwiper2 {
-height: 495px; /* 主圖片高度 */
-width: 664px; /* 主圖片寬度 */
+height:0 auto ; /* 主圖片高度 */
+max-width: 664px; /* 主圖片寬度 */
 margin: 0 auto; /* 置中顯示 */
 grid-column: span 6; /* 主圖片佔6格 */
 }
@@ -137,7 +133,6 @@ display: block;
 width: 100%;
 height: 100%;
 object-fit: cover; /* 確保縮略圖適應容器 */
-border-radius: 8px; /* 圓角設置 */
 }
 
 /* 整個容器的網格佈局 */
@@ -146,7 +141,6 @@ border-radius: 8px; /* 圓角設置 */
   max-width: 100%; /* 圖片寬度最大為列的寬度 */
   height: auto; /* 高度自動調整以保持比例 */
   margin-bottom: 20px; /* 下邊距 */
-  border-radius: 8px; /* 圖片圓角 */
 }
 .product-description {
   padding: 20px; /* 內邊距 */
@@ -162,18 +156,63 @@ border-radius: 8px; /* 圓角設置 */
   padding-bottom: 32px; /* 下方內邊距 32px */
 }
 
+/* 樣式定義 */
+.discounted-price {
+  justify-content: flex-start;
+  max-width: 148px;
+  font-size: 32px;
+  color: #D6A69A; /* 自定義折扣價格顏色 */
+  height: auto;
+}
+.original-price {
+  max-width: 135px;
+  font-size: 28px;
+  color: #BFBFBF; /* 自定義原價顏色 */
+  text-decoration: line-through; /* 刪除線 */
+  height: auto;
+}
 
+.price-wrapper {
+  display: flex;
+  justify-content: flex-start; /* 讓價格對齊到左側 */
+  align-items: center; /* 垂直居中 */
+  margin-top: 20px; /* 與注意事項的間距 */
+}
 
+.form-select {
+  font-size: 18px; /* 調整字體大小 */
+  height: auto;
+  max-width: 550px;
+}
+.input-group{
+  height: auto;
+  max-width:550px;
+}
 
+.btn-cart {
+  background-color: #D6A69A; /* 按鈕顏色 */
+  color: white;
+  font-size: 24px;
+  max-width: 300px; /* 讓按鈕佔滿整個容器 */
+  margin-top: 32px; /* 與數量選擇器之間的間距 */
+  height: auto;
+}
 
-
-
-
-
-
-
-
-
+.product-image1 {
+  width: 100%; /* 讓圖片寬度適應父容器 */
+  height: auto; /* 保持圖片比例 */
+  border-radius: 8px; /* 圓角設置 */
+}
+.product-image2,.product-image3 {
+  width: 100%; /* 讓圖片寬度適應父容器 */
+  height: auto; /* 保持圖片比例 */
+  border-radius: 8px; /* 圓角設置 */
+}
+.product-image4 {
+  width: 100%; /* 讓圖片寬度適應父容器 */
+  height: auto; /* 保持圖片比例 */
+  border-radius: 8px; /* 圓角設置 */
+}
 
 
 
