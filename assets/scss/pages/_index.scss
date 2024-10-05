@@ -193,7 +193,7 @@ object-fit: cover; /* 確保縮略圖適應容器 */
   background-color: #D6A69A; /* 按鈕顏色 */
   color: white;
   font-size: 24px;
-  max-width: 300px; /* 讓按鈕佔滿整個容器 */
+  max-width: 400px; /* 讓按鈕佔滿整個容器 */
   margin-top: 32px; /* 與數量選擇器之間的間距 */
   height: auto;
 }
@@ -214,13 +214,66 @@ object-fit: cover; /* 確保縮略圖適應容器 */
   border-radius: 8px; /* 圓角設置 */
 }
 
+.custom-heading {
+  position: relative;
+  padding: 20px 0; /* 調整內間距 */
+  font-size: 24px; /* 調整字體大小 */
+}
 
+.custom-heading::after {
+  content: '';
+  position: absolute;
+  width: 40px; /* 短條紋的寬度 */
+  height: 2px; /* 短條紋的高度 */
+  background-color: #D6A69A; /* 短條紋的顏色 */
+  bottom: 0; /* 將短條紋放置於文字下方 */
+  left: 50%;
+  transform: translateX(-50%); /* 確保短條紋居中 */
+}
 
+.product-card {
+  position: relative;
+  text-align: center; /* 讓內容居中顯示 */
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* 卡片陰影 */
+}
 
+.product-image {
+  width: 100%;
+  height: auto; /* 保持比例 */
+  border-radius: 8px; /* 圓角效果 */
+}
 
+.price {
+  font-size: 16px;
+  color: #444444; /* 折扣價格顏色 */
+}
 
+.original-price {
+  color: #999;
+  text-decoration: line-through; /* 刪除線 */
+  margin-right: 10px;
+}
 
+.price-row {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
 
+/* 愛心圖標的樣式，設置為右上角，並使用背景圖片 */
+.heart-icon {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 24px;
+  height: 24px;
+  background-image: url('https://img.icons8.com/?size=100&id=f3DSk7zyYLW7&format=png&color=000000'); /* 這裡載入愛心圖片 */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
 
 
