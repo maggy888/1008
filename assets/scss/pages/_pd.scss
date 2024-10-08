@@ -12,15 +12,15 @@
   color: #bfbfbf; /* 斷點符號顏色 */
   padding: 0 5px;
 }
-// .breadcrumb a {
-//   text-decoration: none; /* 移除超連結的下劃線 */
-// }
+.breadcrumb a {
+  text-decoration: none; /* 移除超連結的下劃線 */
+}
 
 /* 針對較小螢幕的樣式調整 */
 @media (max-width: 576px) {
   .breadcrumb {
       max-width: 100%; /* 小螢幕上佔滿寬度 */
-      font-size: 0.875rem; /* 調整字體大小 */
+      font-size: 16px; /* 調整字體大小 */
   }
   .breadcrumb-item + .breadcrumb-item::before {
       padding: 0 5px; /* 調整小螢幕上的分隔符間距 */
@@ -190,10 +190,8 @@ object-fit: cover; /* 確保縮略圖適應容器 */
 }
 
 .btn-cart {
-  background-color: #D6A69A; /* 按鈕顏色 */
-  color: white;
   font-size: 24px;
-  max-width: 400px; /* 讓按鈕佔滿整個容器 */
+  max-width: 550px; /* 讓按鈕佔滿整個容器 */
   margin-top: 32px; /* 與數量選擇器之間的間距 */
   height: auto;
 }
@@ -201,17 +199,14 @@ object-fit: cover; /* 確保縮略圖適應容器 */
 .product-image1 {
   width: 100%; /* 讓圖片寬度適應父容器 */
   height: auto; /* 保持圖片比例 */
-  border-radius: 8px; /* 圓角設置 */
 }
 .product-image2,.product-image3 {
   width: 100%; /* 讓圖片寬度適應父容器 */
   height: auto; /* 保持圖片比例 */
-  border-radius: 8px; /* 圓角設置 */
 }
 .product-image4 {
   width: 100%; /* 讓圖片寬度適應父容器 */
   height: auto; /* 保持圖片比例 */
-  border-radius: 8px; /* 圓角設置 */
 }
 
 .custom-heading {
@@ -242,7 +237,6 @@ object-fit: cover; /* 確保縮略圖適應容器 */
 .product-image {
   width: 100%;
   height: auto; /* 保持比例 */
-  border-radius: 8px; /* 圓角效果 */
 }
 
 .price {
